@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*, *:before, *:after {
+	box-sizing:border-box; /*** MAKES PADDING NOT PART OF THE ENTIRE WIDTH ***/
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;	
+}
+
+body {
+	background:#fff;
+}
+
+h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	color:#000;
+	font-size:2em;
+}
+
+h2 {
+	font-family:  Helvetica, Arial, sans-serif;
+	color:#000;
+	font-size:1.6em;
+}
+
+p, ul, ol {
+	font-family:  Helvetica, Arial, sans-serif;
+	color:#333;
+	font-size:1em;
+}
+
+a {
+	color: yellow;
+	text-decoration: none;
+}
+
+a:hover {
+	color: grey;
+}
+
+/***** GRID STRUCTURE *****/
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.column {
+	float: left;
+	margin: 0 0 0 5%;
+	padding: 5%;
+}
+
+.column:first-child {
+	margin: 0;
+}
+
+.column.full {
+	width:100%;
+}
+
+.column.two-thirds {
+	width:65%;
+}
+
+.column.half {
+	width:47.5%;
+}
+
+.column.one-third {
+	width:30%;
+}
+
+.column.one-fourth {
+	width:21.25%;
+}
+
+.nopadding {
+	padding:0;
+}
+
+/***** CREATE ROWS ****/
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
